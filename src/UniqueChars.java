@@ -28,7 +28,6 @@ public class UniqueChars {
                 }
             }
         }
-        System.out.println(notUniqueLetters);
         return uniqueLetters;
     }
 
