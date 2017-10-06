@@ -1,4 +1,4 @@
-package CandyShop;
+package candyshop;
 
 public class Sweets {
 
@@ -8,13 +8,6 @@ public class Sweets {
 
     public Sweets (String name) {
         this.name = name;
-        if (name.equals("candy")) {
-            this.price = 20.0;
-            this.sugar = 10;
-        } else if (name.equals("lollipop")) {
-            this.price = 10.0;
-            this.sugar = 5;
-        }
     }
 
     public void raisePrice(double percentage) {

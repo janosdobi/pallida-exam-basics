@@ -1,4 +1,4 @@
-package CandyShop;
+package candyshop;
 
 import java.util.ArrayList;
 
@@ -18,7 +18,11 @@ public class CandyShop {
     }
 
     public void createSweets(String name) {
-        storage.add(new Sweets(name));
+        if (name.equals(CANDY)) {
+            storage.add(new Candy());
+        } else if (name.equals(LOLLIPOP)) {
+            storage.add(new Lollipop());
+        }
         storedSugar -= storage.get(storage.size() - 1).sugar;
     }
 

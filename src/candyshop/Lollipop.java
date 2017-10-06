@@ -1,4 +1,4 @@
-package CandyShop;
+package candyshop;
 
 public class Lollipop extends Sweets {
 
