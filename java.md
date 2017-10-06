@@ -15,9 +15,9 @@
 
 # Tasks
 ## 1-3. Complete the following tasks: (~90 mins)
-- [Uniques Characters](uniquechars/UniqueChars.java)
-- [Favourite Animals](favouriteanimals/FavouriteAnimals.java)
-- [Candy Shop](candyshop/TakeMeToThe.java)
+- [Uniques Characters](src/UniqueChars.java)
+- [Favourite Animals](src/FavouriteAnimals.java)
+- [CandyShop.CandyShop.Candy Shop](src/TakeMeToThe.java)
 
 ### Acceptance criteria
 The application is accepted if:
@@ -32,8 +32,14 @@ The application is accepted if:
 
 ###  What is the difference between a function and a method? [2p]
 #### Your answer:
-[add your answer here]
+
+A method is a function, which belongs to a class (and thus is associated with an object).
+There are only methods in Java as all 'function' definitions must be within a class.
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+The constructor is a special method. It is called when an object of the
+given class is instantiated.
+
+It consists of an access modifier, the class name (capital starting letter), 
+ - and optionally - arguments.
