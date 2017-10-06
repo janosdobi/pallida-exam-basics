@@ -8,3 +8,5 @@ out
 *.class
 *.cs
 *.py
+cs.md
+python.md
