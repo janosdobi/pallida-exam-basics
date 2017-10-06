@@ -18,8 +18,14 @@ public class UniqueChars {
             if (!uniqueLetters.contains(sb.charAt(i))) {
                 uniqueLetters.add(sb.charAt(i));
             } else {
-                //notUniqueLetters.add(uniqueLetters.get(i));
-                uniqueLetters.remove(uniqueLetters.indexOf(sb.charAt(i)));
+                notUniqueLetters.add(sb.charAt(i));
+            }
+        }
+        for (int i = 0; i < notUniqueLetters.size(); i++) {
+            for (int j = 0; j < uniqueLetters.size(); j++) {
+                if (notUniqueLetters.get(i).equals(uniqueLetters.get(j))) {
+                    uniqueLetters.remove(j);
+                }
             }
         }
         System.out.println(notUniqueLetters);
