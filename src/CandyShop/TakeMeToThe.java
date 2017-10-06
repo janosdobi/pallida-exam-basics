@@ -21,7 +21,7 @@ public class TakeMeToThe {
         // The CandyShop.CandyShop should be represented as string in this format:
         // "Inventory: 3 candies, 2 lollipops, Income: 100, Sugar: 400gr"
 
-        candyShop = new CandyShop(300);
+        CandyShop candyShop = new CandyShop(300);
         candyShop.createSweets(CandyShop.CANDY);
         candyShop.createSweets(CandyShop.CANDY);
         candyShop.createSweets(CandyShop.LOLLIPOP);

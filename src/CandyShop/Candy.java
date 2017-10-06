@@ -1,10 +1,11 @@
 package CandyShop;
 
-public class Candy extends Product {
+public class Candy extends Sweets {
 
     public Candy() {
-        super.price = 20;
-        super.sugar = 5;
+        super("candy");
+        super.price = 20.0;
+        super.sugar = 10;
     }
 
 }

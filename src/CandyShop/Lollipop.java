@@ -1,9 +1,10 @@
 package CandyShop;
 
-public class Lollipop extends Product {
+public class Lollipop extends Sweets {
 
     public Lollipop() {
-        super.price = 10;
+        super("lollipop");
+        super.price = 10.0;
         super.sugar = 5;
     }
 
