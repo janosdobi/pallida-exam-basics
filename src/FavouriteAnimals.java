@@ -1,3 +1,9 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FavouriteAnimals {
     public static void main(String[] args) {
@@ -10,5 +16,22 @@ public class FavouriteAnimals {
         // One animal should be stored only at once
         // Each animal should be written in separate lines
         // The program should only save animals, no need to print them
+
+        if(args.length == 0) {
+            System.out.println("```java FavouriteAnimals [animal] [animal]```");
+        } else {
+            Path myPath = Paths.get("favourites.txt");
+            try {
+                List<String> animals = Files.readAllLines(myPath);
+                for (int i = 0; i < args.length; i++) {
+                    if (!animals.contains(args[i])) {
+                        animals.add(args[i]);
+                    }
+                }
+                Files.write(myPath, animals);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
